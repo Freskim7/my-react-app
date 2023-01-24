@@ -8,14 +8,11 @@ function Assigment4() {
         {userInput: ""}
   );
     
-  console.log(state.userInput);
-
   const inputChangeHandler = (event) => {
     updateState(
       { userInput: event.target.value }
     );
   }
-
 
    const deleteCharHandler = (index) => {
           const text = state.userInput.split("");// this gives us an array of characters
@@ -32,7 +29,6 @@ function Assigment4() {
 
     });
 
-    console.log(listOfChars);  
   return (
     <div>
       <p>
